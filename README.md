@@ -1,4 +1,4 @@
-Olist Data Warehouse & Analytics
+###Olist Data Warehouse & Analytics
 
 A practice Data Warehouse project built using SQL Server and Medallion Architecture on the Brazilian E-Commerce (Olist) dataset
 📌 Project Overview
@@ -7,7 +7,7 @@ This project demonstrates how raw e-commerce data can be transformed into a stru
 
 The project covers data ingestion, data cleaning, transformation, data modeling, and analytical reporting.
 
-🏗️ Architecture
+**🏗️ Architecture**
 
 The project follows the Medallion Architecture:
 
