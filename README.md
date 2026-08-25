@@ -1,39 +1,71 @@
-# 🥉🥈🥇 SQL Data Warehouse & Medallion Architecture Project
+Olist Data Warehouse & Analytics
 
-Welcome to my  portfolio project! In this project, I built an end-to-end modern Data Warehouse from scratch using **pure T-SQL** and **SQL Server (SSMS)** based on the **Medallion Architecture (Bronze -> Silver -> Gold)** pattern.
+A practice Data Warehouse project built using SQL Server and Medallion Architecture on the Brazilian E-Commerce (Olist) dataset
+📌 Project Overview
 
-Inspired by **Data with Baraa**, this repository demonstrates raw CSV data ingestion, SQL-based ETL pipelines, data quality cleansing, and dimensional modeling (Star Schema) for analytics.
+This project demonstrates how raw e-commerce data can be transformed into a structured and analytics-ready data warehouse using the Bronze, Silver, and Gold layers.
 
----
+The project covers data ingestion, data cleaning, transformation, data modeling, and analytical reporting.
 
-## 📌 Project Overview
+🏗️ Architecture
 
-The objective is to consolidate sales, ERP, and CRM data into a clean, single-source-of-truth data warehouse:
+The project follows the Medallion Architecture:
 
-- **Bronze Layer (Raw):** Ingest raw CSV files into SQL Server staging tables as-is using `BULK INSERT`.
-- **Silver Layer (Cleansing):** Cleanse data using SQL (handling NULLs, removing duplicates, trimming strings, data type normalization, and validation rules).
-- **Gold Layer (Analytical):** Model business-ready data into a **Star Schema** with Fact and Dimension views/tables (`fact_sales`, `dim_customers`, `dim_products`).
+Bronze Layer – Stores raw data as received from the source.
+Silver Layer – Cleans, validates, and transforms the raw data.
+Gold Layer – Contains business-ready data designed for analytics and reporting.
+🛠️ Tools & Technologies
+SQL Server
+T-SQL
+SSMS
+Medallion Architecture
+Data Warehousing
+Data Cleaning & Transformation
+ETL
+📊 Dataset
 
----
+Brazilian E-Commerce Public Dataset by Olist
 
-## 🛠️ Tech Stack & Tools
+The dataset contains information about orders, customers, sellers, products, payments, reviews, and geolocation.
 
-- **Database:** Microsoft SQL Server (Express)
-- **IDE:** SQL Server Management Studio (SSMS)
-- **Language:** T-SQL (Stored Procedures, Views, CTEs, Window Functions)
-- **Architecture Design:** Draw.io
-- **Version Control:** Git, GitHub
-
----
-
-## 📂 Repository Structure
-
-```text
-├── datasets/                 # Raw CRM and ERP source CSV files
-├── docs/                     # Data architecture diagrams and star schema docs
+🔄 Data Warehouse Process
+Raw Data
+   ↓
+Bronze Layer
+   ↓
+Silver Layer
+   ↓
+Gold Layer
+   ↓
+Analytics & Reporting
+🎯 Project Objectives
+Build a structured Data Warehouse
+Implement Medallion Architecture
+Clean and transform raw e-commerce data
+Create analytics-ready datasets
+Practice SQL and data warehousing concepts
+Generate meaningful business insights
+📁 Project Structure
+olist-datawarehouse-analytics/
+│
+├── datasets/
 ├── scripts/
-│   ├── 01_init_database.sql  # Schema creation (bronze, silver, gold)
-│   ├── 02_bronze_layer.sql   # Staging tables & BULK INSERT procedures
-│   ├── 03_silver_layer.sql   # Data cleansing & transformation procedures
-│   └── 04_gold_layer.sql     # Fact and Dimension views/tables
-├── README.md                 # Documentation
+│   ├── bronze/
+│   ├── silver/
+│   └── gold/
+│
+├── documentation/
+└── README.md
+📈 Key Analytics Areas
+Sales & Revenue Analysis
+Customer Analysis
+Product Analysis
+Seller Performance
+Order & Delivery Analysis
+Payment Analysis
+Customer Review Analysis
+📚 Project Type
+
+Practice / Learning Project
+
+Built to strengthen practical skills in SQL, Data Warehousing, ETL, and Analytics
