@@ -1,72 +1,121 @@
-# Olist Data Warehouse and Analytics project
+# 🛒 Olist Data Warehouse and Analytics projects
 
-A practice Data Warehouse project built using SQL Server and Medallion Architecture on the Brazilian E-Commerce (Olist) dataset
+A practice Data Warehouse and Analytics project built using **SQL Server** and **Medallion Architecture** on the Brazilian E-Commerce (Olist) dataset.
 
-📌 Project Overview
+This project demonstrates the complete data journey from **raw data ingestion to data cleaning, transformation, modeling, and analytics-ready data**.
 
-This project demonstrates how raw e-commerce data can be transformed into a structured and analytics-ready data warehouse using the Bronze, Silver, and Gold layers.
+---
 
-The project covers data ingestion, data cleaning, transformation, data modeling, and analytical reporting.
+## 🚀 Project Overview
 
-**🏗️ Architecture**
+This project focuses on building a modern Data Warehouse using the **Bronze, Silver, and Gold layers** of the Medallion Architecture.
 
-The project follows the Medallion Architecture:
+The objective is to transform raw e-commerce data into a structured and analytics-ready data model that can be used to generate meaningful business insights.
 
-Bronze Layer – Stores raw data as received from the source.
-Silver Layer – Cleans, validates, and transforms the raw data.
-Gold Layer – Contains business-ready data designed for analytics and reporting.
-🛠️ Tools & Technologies
-SQL Server
-T-SQL
-SSMS
-Medallion Architecture
-Data Warehousing
-Data Cleaning & Transformation
-ETL
-📊 Dataset
+---
 
-Brazilian E-Commerce Public Dataset by Olist
+## 🎯 Project Requirements
 
-The dataset contains information about orders, customers, sellers, products, payments, reviews, and geolocation.
+### 🏗️ Building the Data Warehouse
 
-🔄 Data Warehouse Process
-Raw Data
-   ↓
-Bronze Layer
-   ↓
-Silver Layer
-   ↓
-Gold Layer
-   ↓
-Analytics & Reporting
-🎯 Project Objectives
-Build a structured Data Warehouse
-Implement Medallion Architecture
-Clean and transform raw e-commerce data
-Create analytics-ready datasets
-Practice SQL and data warehousing concepts
-Generate meaningful business insights
-📁 Project Structure
-olist-datawarehouse-analytics/
-│
-├── datasets/
-├── scripts/
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
-│
-├── documentation/
-└── README.md
-📈 Key Analytics Areas
-Sales & Revenue Analysis
-Customer Analysis
-Product Analysis
-Seller Performance
-Order & Delivery Analysis
-Payment Analysis
-Customer Review Analysis
-📚 Project Type
+#### Objective
 
-Practice / Learning Project
+Build a structured Data Warehouse using **SQL Server** to consolidate and transform Brazilian e-commerce data for analytical reporting.
 
-Built to strengthen practical skills in SQL, Data Warehousing, ETL, and Analytics
+#### Specifications
+
+- **Data Sources:** Brazilian E-Commerce Public Dataset by Olist.
+- **Data Ingestion:** Load raw **CRM and ERP data provided as CSV files** into the Bronze layer for further processing and transformation.
+- **Data Quality:** Identify and handle missing, duplicate, inconsistent, and invalid data.
+- **Data Transformation:** Clean and transform data through the Silver layer.
+- **Data Modeling:** Create business-ready datasets in the Gold layer.
+- **Documentation:** Maintain clear documentation of the Data Warehouse structure and transformations.
+
+---
+
+## 🥉 Bronze Layer
+
+The Bronze layer stores the data in its **raw form** as received from the source.
+
+### Key Activities
+
+- Load raw CSV files
+- Preserve source data
+- Perform basic validation
+- Maintain the original structure of the data
+
+---
+
+## 🥈 Silver Layer
+
+The Silver layer contains **cleaned and transformed data**.
+
+### Key Activities
+
+- Data cleaning
+- Handling missing values
+- Removing duplicates
+- Standardizing data
+- Data type corrections
+- Applying transformation rules
+- Validating relationships between tables
+
+---
+
+## 🥇 Gold Layer
+
+The Gold layer contains **business-ready and analytics-ready data**.
+
+### Key Activities
+
+- Create analytical views/tables
+- Apply business logic
+- Build relationships between entities
+- Prepare data for reporting and analysis
+- Support business insights
+
+---
+
+## 📊 Analytics & Reporting
+
+The Gold layer can be used to analyze different areas of the Olist business.
+
+### Key Analysis Areas
+
+- **Customer Analysis**
+- **Sales & Revenue Analysis**
+- **Product Performance**
+- **Seller Performance**
+- **Order & Delivery Analysis**
+- **Payment Analysis**
+- **Customer Review Analysis**
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **SQL Server**
+- **T-SQL**
+- **SQL Server Management Studio (SSMS)**
+- **Medallion Architecture**
+- **Data Warehousing**
+- **ETL / Data Transformation**
+- **Data Cleaning & Modeling**
+
+---
+
+## 🔄 Data Flow
+
+```text
+Brazilian E-Commerce Dataset
+            ↓
+      Raw CSV Files
+            ↓
+     🥉 Bronze Layer
+            ↓
+     🥈 Silver Layer
+            ↓
+      🥇 Gold Layer
+            ↓
+   Analytics & Reporting
+
